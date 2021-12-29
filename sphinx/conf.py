@@ -19,13 +19,13 @@ import os
 
 # -- Project information -----------------------------------------------------
 
-project = 'RepLAB-Quantum'
+project = 'RepLAB-API'
 copyright = '2018-2021, Denis Rosset, Jean-Daniel Bancal and collaborators'
 author = 'Denis Rosset, Jean-Daniel Bancal and collaborators'
 
 from pathlib import Path
 
-version = Path('../../version.txt').read_text().strip()
+version = Path('../../external/replab/replab_version.txt').read_text().strip()
 release = version
 
 # rst_epilog = '.. _latest release ZIP: https://github.com/replab/replab/archive/v' + version + '.zip'
@@ -69,7 +69,7 @@ autosummary_generate = True
 
 matlab_keep_package_prefix = False
 
-matlab_src_dir = os.path.dirname(os.path.abspath(__file__ + "/"))+"/_src"
+matlab_src_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__ + "/")))+"/src"
 primary_domain = 'mat'
 default_role = 'obj'
 
@@ -98,9 +98,9 @@ exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store', '**.ipynb_checkpoints', 
 pygments_style = 'sphinx'
 
 # The location of Replab's API documentation, to enable cross-references
-intersphinx_mapping = {'mat': ('https://replab.github.io/replab', None)}
-intersphinx_cache_limit = -1 # always fetch the latest version of https://replab.github.io/replab/objects.inv
-intersphinx_timeout = 10 # timeout so we don't wait indefinitely if the website is unavailable
+#intersphinx_mapping = {'api': ('https://replab.github.io/api', None)}
+#intersphinx_cache_limit = -1 # always fetch the latest version of https://replab.github.io/replab/objects.inv
+#intersphinx_timeout = 10 # timeout so we don't wait indefinitely if the website is unavailable
 
 # -- Options for HTML output -------------------------------------------------
 
@@ -117,7 +117,7 @@ html_static_path = ['_static']
 # Guzzle theme options (see theme.conf for more information)
 html_theme_options = {
     # Set the name of the project to appear in the sidebar
-    "project_nav_name": "RepLAB-Quantum"
+    "project_nav_name": "RepLAB-API"
 }
 
 html_css_files = [

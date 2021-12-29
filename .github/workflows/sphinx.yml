@@ -22,7 +22,7 @@ jobs:
       - name: Check out doc repository
         uses: actions/checkout@v2
         with:
-          repository: replab/web
+          repository: replab/api
           ref: gh-pages
           path: docs
           persist-credentials: false
@@ -32,7 +32,7 @@ jobs:
         run: echo "::set-output name=sha::$(git rev-parse HEAD)"
       - name: Calling docker launch action
         id: dock
-        uses: replab/web/.github/actions/sphinx@main
+        uses: replab/api/.github/actions/sphinx@main
         with:
           commit: ${{ steps.vars.outputs.sha }}
       - name: Commit files

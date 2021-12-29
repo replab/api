@@ -12,6 +12,5 @@ function result = build
     sphinxTarget = fullfile(basePath, 'docs');
     
     % Builds the documentation only
-    replab_sphinx('ppdoc', 'sphinxRoot', sphinxRoot, 'preprocessedFolder', preprocessedFolder, 'sphinxTarget', sphinxTarget);
-    result = replab_sphinx('build', 'sphinxRoot', sphinxRoot, 'preprocessedFolder', preprocessedFolder, 'sphinxTarget', sphinxTarget);
+    replab_sphinx('doublePass', 'sphinxRoot', sphinxRoot, 'preprocessedFolder', preprocessedFolder, 'sphinxTarget', sphinxTarget);
 end
