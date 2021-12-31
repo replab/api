@@ -1,4 +1,14 @@
-# RepLAB-Quantum
-This repository builds a [website](https://replab.github.io/quantum/) illustrating various ways in which RepLAB can be used in the context of quantum information theory.
+# The RepLAB API website
 
-Material under the [Mozilla Public License 2.0](https://github.com/replab/replab/blob/master/LICENSE).
+The source code of the RepLAB toolbox is available on the main [RepLAB repository](https://www.github.com/replab/replab). This repository only contains the source files for the RepLAB API website.
+
+- Go to the [website](https://replab.github.io/api/) to consult the latest version.
+
+- To generate a local copy of the website, follow these steps:
+    - Clone this repository with `git clone --recursive https://www.github.com/replab/api.git`
+    - Install the required sphinx modules with `pip install -r sphinx/requirements.txt`
+    - Run `build.m` in Octave to compile the website
+    - Consult `docs/index.html`
+
+## License
+Material under the [Mozilla Public License 2.0](https://github.com/replab/api/blob/master/LICENSE).
