@@ -73,7 +73,7 @@
   &nbsp;
   <a class="website-part" href="https://replab.github.io/book">Book</a>
   &nbsp;
-  <a class="website-part" href="https://replab.github.io/apps">Applis</a>
+  <a class="website-part" href="https://replab.github.io/applis">Applis</a>
   &nbsp;
   <a class="website-current" href="https://replab.github.io/api">API</a>
 </div><div class="sidebar-block">
@@ -487,6 +487,7 @@ I.e. for <code class="docutils literal notranslate"><span class="pre">Sn</span> 
 <li><p><a class="reference internal" href="#+replab.PermutationGroup.findIsomorphisms" title="+replab.PermutationGroup.findIsomorphisms"><code class="xref mat mat-obj docutils literal notranslate"><span class="pre">findIsomorphisms</span></code></a> – Finds all the isomorphisms from this finite group to another finite group</p></li>
 <li><p><a class="reference internal" href="#+replab.PermutationGroup.findMorphisms" title="+replab.PermutationGroup.findMorphisms"><code class="xref mat mat-obj docutils literal notranslate"><span class="pre">findMorphisms</span></code></a> – Finds all the morphisms from this finite group to another finite group</p></li>
 <li><p><a class="reference internal" href="#+replab.PermutationGroup.innerAutomorphism" title="+replab.PermutationGroup.innerAutomorphism"><code class="xref mat mat-obj docutils literal notranslate"><span class="pre">innerAutomorphism</span></code></a> – Returns the inner automorphism given using conjugation by the given element</p></li>
+<li><p><a class="reference internal" href="#+replab.PermutationGroup.isIsomorphicTo" title="+replab.PermutationGroup.isIsomorphicTo"><code class="xref mat mat-obj docutils literal notranslate"><span class="pre">isIsomorphicTo</span></code></a> – Returns whether this group is isomorphic to another group</p></li>
 <li><p><a class="reference internal" href="#+replab.PermutationGroup.isMorphismByImages" title="+replab.PermutationGroup.isMorphismByImages"><code class="xref mat mat-obj docutils literal notranslate"><span class="pre">isMorphismByImages</span></code></a> – Checks whether the given images describe a group morphism</p></li>
 <li><p><a class="reference internal" href="#+replab.PermutationGroup.isomorphismByFunction" title="+replab.PermutationGroup.isomorphismByFunction"><code class="xref mat mat-obj docutils literal notranslate"><span class="pre">isomorphismByFunction</span></code></a> – Constructs an isomorphism to a finite group using an image function</p></li>
 <li><p><a class="reference internal" href="#+replab.PermutationGroup.isomorphismByFunctions" title="+replab.PermutationGroup.isomorphismByFunctions"><code class="xref mat mat-obj docutils literal notranslate"><span class="pre">isomorphismByFunctions</span></code></a> – Constructs a group isomorphism using preimage/image functions</p></li>
@@ -1136,6 +1137,12 @@ I.e. for <code class="docutils literal notranslate"><span class="pre">Sn</span> 
 <dt class="sig sig-object mat" id="+replab.PermutationGroup.isIdentity">
 <span class="sig-name descname"><span class="pre">isIdentity</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="pre">self</span></em>, <em class="sig-param"><span class="pre">x</span></em><span class="sig-paren">)</span><a class="headerlink" href="#+replab.PermutationGroup.isIdentity" title="Permalink to this definition">¶</a></dt>
 <dd><p>Documentation in <a class="reference internal" href="groups.html#+replab.Monoid.isIdentity" title="+replab.Monoid.isIdentity"><code class="xref mat mat-meth docutils literal notranslate"><span class="pre">replab.Monoid.isIdentity()</span></code></a></p>
+</dd></dl>
+
+<dl class="mat method">
+<dt class="sig sig-object mat" id="+replab.PermutationGroup.isIsomorphicTo">
+<span class="sig-name descname"><span class="pre">isIsomorphicTo</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="pre">self</span></em>, <em class="sig-param"><span class="pre">target</span></em><span class="sig-paren">)</span><a class="headerlink" href="#+replab.PermutationGroup.isIsomorphicTo" title="Permalink to this definition">¶</a></dt>
+<dd><p>Documentation in <a class="reference internal" href="finite_groups.html#+replab.FiniteGroup.isIsomorphicTo" title="+replab.FiniteGroup.isIsomorphicTo"><code class="xref mat mat-meth docutils literal notranslate"><span class="pre">replab.FiniteGroup.isIsomorphicTo()</span></code></a></p>
 </dd></dl>
 
 <dl class="mat method">
@@ -2425,6 +2432,7 @@ where S = SignedPermutations(domainSize)</p>
 <li><p><a class="reference internal" href="#+replab.SignedPermutationGroup.findIsomorphisms" title="+replab.SignedPermutationGroup.findIsomorphisms"><code class="xref mat mat-obj docutils literal notranslate"><span class="pre">findIsomorphisms</span></code></a> – Finds all the isomorphisms from this finite group to another finite group</p></li>
 <li><p><a class="reference internal" href="#+replab.SignedPermutationGroup.findMorphisms" title="+replab.SignedPermutationGroup.findMorphisms"><code class="xref mat mat-obj docutils literal notranslate"><span class="pre">findMorphisms</span></code></a> – Finds all the morphisms from this finite group to another finite group</p></li>
 <li><p><a class="reference internal" href="#+replab.SignedPermutationGroup.innerAutomorphism" title="+replab.SignedPermutationGroup.innerAutomorphism"><code class="xref mat mat-obj docutils literal notranslate"><span class="pre">innerAutomorphism</span></code></a> – Returns the inner automorphism given using conjugation by the given element</p></li>
+<li><p><a class="reference internal" href="#+replab.SignedPermutationGroup.isIsomorphicTo" title="+replab.SignedPermutationGroup.isIsomorphicTo"><code class="xref mat mat-obj docutils literal notranslate"><span class="pre">isIsomorphicTo</span></code></a> – Returns whether this group is isomorphic to another group</p></li>
 <li><p><a class="reference internal" href="#+replab.SignedPermutationGroup.isMorphismByImages" title="+replab.SignedPermutationGroup.isMorphismByImages"><code class="xref mat mat-obj docutils literal notranslate"><span class="pre">isMorphismByImages</span></code></a> – Checks whether the given images describe a group morphism</p></li>
 <li><p><a class="reference internal" href="#+replab.SignedPermutationGroup.isomorphismByFunction" title="+replab.SignedPermutationGroup.isomorphismByFunction"><code class="xref mat mat-obj docutils literal notranslate"><span class="pre">isomorphismByFunction</span></code></a> – Constructs an isomorphism to a finite group using an image function</p></li>
 <li><p><a class="reference internal" href="#+replab.SignedPermutationGroup.isomorphismByFunctions" title="+replab.SignedPermutationGroup.isomorphismByFunctions"><code class="xref mat mat-obj docutils literal notranslate"><span class="pre">isomorphismByFunctions</span></code></a> – Constructs a group isomorphism using preimage/image functions</p></li>
@@ -3042,6 +3050,12 @@ where S = SignedPermutations(domainSize)</p>
 <dt class="sig sig-object mat" id="+replab.SignedPermutationGroup.isIdentity">
 <span class="sig-name descname"><span class="pre">isIdentity</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="pre">self</span></em>, <em class="sig-param"><span class="pre">x</span></em><span class="sig-paren">)</span><a class="headerlink" href="#+replab.SignedPermutationGroup.isIdentity" title="Permalink to this definition">¶</a></dt>
 <dd><p>Documentation in <a class="reference internal" href="groups.html#+replab.Monoid.isIdentity" title="+replab.Monoid.isIdentity"><code class="xref mat mat-meth docutils literal notranslate"><span class="pre">replab.Monoid.isIdentity()</span></code></a></p>
+</dd></dl>
+
+<dl class="mat method">
+<dt class="sig sig-object mat" id="+replab.SignedPermutationGroup.isIsomorphicTo">
+<span class="sig-name descname"><span class="pre">isIsomorphicTo</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="pre">self</span></em>, <em class="sig-param"><span class="pre">target</span></em><span class="sig-paren">)</span><a class="headerlink" href="#+replab.SignedPermutationGroup.isIsomorphicTo" title="Permalink to this definition">¶</a></dt>
+<dd><p>Documentation in <a class="reference internal" href="finite_groups.html#+replab.FiniteGroup.isIsomorphicTo" title="+replab.FiniteGroup.isIsomorphicTo"><code class="xref mat mat-meth docutils literal notranslate"><span class="pre">replab.FiniteGroup.isIsomorphicTo()</span></code></a></p>
 </dd></dl>
 
 <dl class="mat method">
